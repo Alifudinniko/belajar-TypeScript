@@ -4,7 +4,11 @@
 /********** Javascript Types ***********/
 
 let a;                  // undefined
-let b = true;           // boolean
+
+console.log(typeof (a))
+
+const b = true;           // boolean
+console.log(typeof (b))
 let c = 1;              // number
 let d = "hello";        // string
 let e = 100n;           // big int (starting ES2020)
