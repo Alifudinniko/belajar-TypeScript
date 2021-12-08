@@ -72,8 +72,22 @@ export {}; // quick fix for global variable
  * ]
  */
 
+// //SB
+// let list : {
+//     color : string;
+//     index : number;
+// }[]
+// list =  [
+//        { color: 'blue', index: 1 },
+//        { color: 'red', index: 2 },
+//     ]
 
-
+//  //GA
+//  let lis2t : Array<{color:string; index:number}>
+//  lis2t =  [
+//     { color: 'blue', index: 1 },
+//     { color: 'red', index: 2 },
+//  ]
 
 /**
  * 6. Array multi dimension [[]]
