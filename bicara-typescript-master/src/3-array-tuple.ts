@@ -112,3 +112,5 @@ export {}; // quick fix for global variable
  * 7. Destructuring
  * let [a, b, c, d]: [number, number, number, string] = [1, 2, 3, 'four'];
  */
+
+ let [a, b, c, d]: [number, number, number, string] = [1, 2, 3, 'four'];
