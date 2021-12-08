@@ -21,6 +21,29 @@ export {};
   }
 */
 
+// // type Interference
+// let produk ={
+//   id: "ID-1",
+//   productName: "Macbook Air",
+//   price: 2000,
+//   note: ""
+// }
+
+// // Inline interface
+// let produk2 :{
+//   id:string;
+//   price : number;
+// }
+
+// // interface
+// interface Produkmain {
+//   id:string;
+//   price : number;
+// }
+
+let produk3:Produkmain;
+
+
 /**
  * 2. Nested Object
  */
