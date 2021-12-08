@@ -7,8 +7,13 @@ let a;                  // undefined
 
 console.log(typeof (a))
 
-const b = true;           // boolean
-console.log(typeof (b))
+const num = 1;           // boolean
+num = "hello"
+num = [1, 2, 3]
+console.log(typeof (num))
+// let b = "hello";
+
+
 let c = 1;              // number
 let d = "hello";        // string
 let e = 100n;           // big int (starting ES2020)
@@ -24,6 +29,8 @@ class Product {
   // class
   //...
 }
+
+
 let k = new Product();
 
 /********** Why is it call dynamic type / weekly typed ? ***********/
