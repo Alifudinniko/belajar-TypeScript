@@ -97,6 +97,17 @@ export {}; // quick fix for global variable
  * ];
  */
 
+// //SB
+// let matrix:number[][];
+// matrix =  [
+//       [1, 2],
+//       [3, 4],
+//      ];
+
+// //GA
+// let matrix2:Array<Array<number>>;
+
+
 /**
  * 7. Destructuring
  * let [a, b, c, d]: [number, number, number, string] = [1, 2, 3, 'four'];
