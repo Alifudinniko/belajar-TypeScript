@@ -46,12 +46,12 @@ export {}; // quick fix for global variable
  * ["hello", 1, 2, 3 ]
  */
 
-//SB
-let list:(string|number)[];
-list =  ["hello", 1, 2, 3, "as" ];
-//GA
-let list2:Array<string|number>;
-list2 =  ["hello", 1, 2, 3, "as" ];
+// //SB
+// let list:(string|number)[];
+// list =  ["hello", 1, 2, 3, "as" ];
+// //GA
+// let list2:Array<string|number>;
+// list2 =  ["hello", 1, 2, 3, "as" ];
 
 
 /**
@@ -59,6 +59,8 @@ list2 =  ["hello", 1, 2, 3, "as" ];
  * ['cordinat', 2, 4, 7]
  */
 
+// let list : [string,number,number,number]
+// list =  ['cordinat', 2, 4, 7]
 
 
 
@@ -69,6 +71,9 @@ list2 =  ["hello", 1, 2, 3, "as" ];
  *   { color: 'red', index: 2 },
  * ]
  */
+
+
+
 
 /**
  * 6. Array multi dimension [[]]
