@@ -17,6 +17,15 @@ export {}; // quick fix for global variable
  * [1,2,3,4]
  */
 
+// //TI
+// let list =[1,2,3,4];
+// //SB
+// let list2:number[];
+// list = [1,2,3,4];
+// //GA
+// let list3:Array<number>;
+// list = [1,2,3,4];
+
 /**
  * 2. Array of String
  * ['a', 'b', 'c']
