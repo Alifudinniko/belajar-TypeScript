@@ -21,27 +21,27 @@ export {};
   }
 */
 
-// type Interference
-let produk ={
-  id: "ID-1",
-  productName: "Macbook Air",
-  price: 2000,
-  note: ""
-};
+// // type Interference
+// let produk ={
+//   id: "ID-1",
+//   productName: "Macbook Air",
+//   price: 2000,
+//   note: ""
+// };
 
-// Inline interface
-let produk2 :{
-  id:string;
-  price : number;
-};
+// // Inline interface
+// let produk2 :{
+//   id:string;
+//   price : number;
+// };
 
-// interface
-interface Produkmain {
-  id:string;
-  price : number;
-};
+// // interface
+// interface Produkmain {
+//   id:string;
+//   price : number;
+// };
 
-let produk3:Produkmain;
+// let produk3:Produkmain;
 
 
 /**
@@ -79,6 +79,37 @@ let produk3:Produkmain;
       ]
     }
 */
+
+interface Address {
+  street : string;
+  city : string
+
+}
+interface User {
+  id : string;
+  name:string;
+  address:Array<Address>;
+}
+let people : User;
+people = {
+  id: "U-1",
+  name: "Adi dodi",
+  address: [
+    {
+      street : "Jln. Setapak No.2",
+      city: "Jakarta"
+    },
+    {
+      street: "Jln. Lebar sekali no 10",
+      city: "Medan"
+    }
+  ]
+}
+
+
+
+
+
 
 /**
  * 4. Nested, Object of Object
