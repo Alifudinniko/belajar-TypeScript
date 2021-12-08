@@ -175,12 +175,19 @@ Keyboard = {
  * 5. Object Destructuring
  */
 
-/*
+
   let fullName = {
     firstName : "Sastra",
     lastName : "Nababan"
   }
-  let {firstName, lastName} = fullName
-*/
+  
 
-//Ty
+
+//Type Interference
+// let {firstName, lastName} = fullName
+
+
+
+//Inline interface
+
+let { firstName, lastName}:{firstName:string; lastName:string;} = fullName;
