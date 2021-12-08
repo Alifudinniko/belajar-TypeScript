@@ -31,6 +31,16 @@ export {}; // quick fix for global variable
  * ['a', 'b', 'c']
  */
 
+//  //TI 
+//  let list = ['a','b','c'];
+//  //SB
+//  let list2:string[];
+//  list2 = ['a','b','c'];
+//  //GA
+//  let list3:Array<string>;
+//  list3 = ['a','b','c'];
+
+
 /**
  * 3. Array with Union
  * ["hello", 1, 2, 3 ]
