@@ -46,10 +46,21 @@ export {}; // quick fix for global variable
  * ["hello", 1, 2, 3 ]
  */
 
+//SB
+let list:(string|number)[];
+list =  ["hello", 1, 2, 3, "as" ];
+//GA
+let list2:Array<string|number>;
+list2 =  ["hello", 1, 2, 3, "as" ];
+
+
 /**
  * 4. Tuple
  * ['cordinat', 2, 4, 7]
  */
+
+
+
 
 /**
  * 5. Array of Object
