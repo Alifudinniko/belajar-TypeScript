@@ -70,6 +70,25 @@ let myData2: UnionAb={
 /**
  * Implements
  */
+//Blueprint
+interface Person{
+    name : string;
+    age :number;
+    getName(id:number):string;
+}
+class People implements Person{
+name:string;
+age:number;
+constructor (name:string, age:number){
+    this.age = age;
+    this.name = name;
+}
+
+getName(id:number){
+    return 'yesss';
+}
+
+}
 
 /**
  * Extend
