@@ -15,17 +15,17 @@ export {}; // quick fix for global variable
  */
 
 // function declaration
-// function add(x, y) {
-//     return x + y;
-// }
-
+function add(x:number, y:number , z?:number):number {
+    return x + y;
+}
+add(1,2)
 // function expression
-// const addEx = function (x, y) {
-//     return x + y;
-// };
+const addEx = function (x:number, y:number):number {
+    return x + y;
+};
 
 // arrow function
-// const addArrow = (x, y) => x + y;
+const addArrow = (x:number, y:number):number => x + y;
 
 // function with no return value
 // const hello = (name) => console.log("hello " + name)
