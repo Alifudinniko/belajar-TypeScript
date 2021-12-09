@@ -11,7 +11,12 @@
 // class --> Object Instance
 //Access Modifier : public, private, protected
 
-class User {
+//abstrak
+abstract class Root{
+    abstract done:boolean;
+}
+
+class User extends Root{
     //Properties
     id:number;
     firstName:string;
@@ -21,7 +26,7 @@ class User {
     static MAX_FAILED_LOGIN =2
 
     private retryLogin = 0 
-
+    done : boolean;
 
     //Method
     login(username:string, password:string){
@@ -40,11 +45,13 @@ class User {
 
     //constructor
     constructor(id:number, firstName:string, lastName:string ){
+        super()
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.save = false;
         this.token = "";
+        this.done = false
     }
 }
 
