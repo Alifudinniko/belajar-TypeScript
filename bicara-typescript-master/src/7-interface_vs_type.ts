@@ -70,8 +70,16 @@ let myData2: UnionAb={
 /**
  * Implements
  */
+
+interface Address{
+    street:string;
+}
+
+
+
 //Blueprint
-interface Person{
+// type &interface V
+interface Person extends Address{
     name : string;
     age :number;
     getName(id:number):string;
@@ -79,9 +87,11 @@ interface Person{
 class People implements Person{
 name:string;
 age:number;
+street: string;
 constructor (name:string, age:number){
     this.age = age;
     this.name = name;
+    this.street = '';
 }
 
 getName(id:number){
@@ -93,3 +103,6 @@ getName(id:number){
 /**
  * Extend
  */
+
+
+
