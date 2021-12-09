@@ -87,6 +87,26 @@ console.log(fruits);
   - return either string or number
   - don't use `any`
 */
-// function CT(param) {
-//   return param
+// //Solution 1 Union
+// function CT(param:string|number):string|number {
+//   return param;
 // }
+
+//Solution 2 generic
+
+function ct_generic<T>(param: T):T {
+  return param;
+}
+
+console.log(ct_generic<number>(1))
+
+//Solution 3 Overloading
+
+function CT_OVERLOAD(param : string):string;
+function CT_OVERLOAD(param : number):number;
+function CT_OVERLOAD(param : any):any {
+  return param;
+}
+console.log(CT_OVERLOAD('hello'))
+
+CT_OVERLOAD(1);
