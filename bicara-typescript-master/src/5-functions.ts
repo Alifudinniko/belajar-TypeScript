@@ -73,13 +73,13 @@ console.log(result)
 
 
 /********** 3. Rest Parameter  ***********/
-/*
-function fruitsCollection(item, ...restItems) {
+
+function fruitsCollection(item:string, ...restItems:string[]) {
   return item + " " + restItems.join(" ");
 }
 let fruits = fruitsCollection('Apple', 'Mango', 'Avocado');
-// console.log(fruits);
-*/
+console.log(fruits);
+
 
 /********* 4. conditional type with union ***********/
 /*
