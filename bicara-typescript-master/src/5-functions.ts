@@ -14,26 +14,32 @@ export {}; // quick fix for global variable
 /* Function Declaration, Expession, Arrow
  */
 
-// function declaration
-function add(x:number, y:number , z?:number):number {
-    return x + y;
-}
-add(1,2)
-// function expression
-const addEx = function (x:number, y:number):number {
-    return x + y;
-};
+// // function declaration
+// function add(x:number, y:number , z?:number):number {
+//     return x + y;
+// }
+// add(1,2)
+// // function expression
+// const addEx = function (x:number, y:number):number {
+//     return x + y;
+// };
 
-// arrow function
-const addArrow = (x:number, y:number):number => x + y;
+// // arrow function
+// const addArrow = (x:number, y:number):number => x + y;
 
 // function with no return value
-// const hello = (name) => console.log("hello " + name)
+const hello = (name:string) => console.log("hello " + name)
+
 
 // function with callback
-// function request(url,cb){
+type Greater=(message:string) => void;
+function request(url:string,cb:Greater){
+  cb(url)
 
-// }
+}
+let fn=(str:string) =>console.log(str);
+request('alif',fn);
+
 
 /********** 2. optional & default parameters  ***********/
 /*
