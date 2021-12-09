@@ -51,15 +51,26 @@ request('alif',fn);
 | languange  | No       | english       |
 */
 
-/*
-function submitContact(firstName, lastName, languange, gender){
+type Contact={
+  firstName:string,
+  lastName:string,
+  gender?:string,
+  languange:string
+}
+
+
+function submitContact(firstName:string, lastName:string, languange='indonesia', gender?:string):Contact{
   return {
-    firstName,
-    lastName
-    languange
+    firstName:firstName,
+    lastName:lastName,
+    languange,
+    ...(gender && {gender})
   }
 }
-*/
+
+let result = submitContact('alifudinniko','priambodo');
+console.log(result)
+
 
 /********** 3. Rest Parameter  ***********/
 /*
