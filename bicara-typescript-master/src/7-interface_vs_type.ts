@@ -39,6 +39,34 @@ interface Song{
  * Intersection & Union
  */
 
+type typeA = {
+    id:number;
+    propa:string
+}
+type typeB= {
+    id:number;
+    propb?:string
+}
+
+//intersection  => semua harus dipakai
+type intersectionAB =  typeA & typeB;
+
+//Union => tidak semua
+type UnionAb = typeA | typeB;
+
+
+let myData: intersectionAB={
+    id:1,
+    propa:"test",
+    propb:"nu"
+}
+
+let myData2: UnionAb={
+    id:1,
+ 
+    propb:"nu"
+}
+
 /**
  * Implements
  */
