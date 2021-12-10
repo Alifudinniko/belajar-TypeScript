@@ -20,11 +20,15 @@ interface User {
 }
 
 // function CreateUser(data: User) {}
-function CreateUser(data: Readonly<User>) {}
+// function CreateUser(data: Readonly<User>) {}
+// function CreateUser(data: Partial<User>) {}
+// function CreateUser(data: Required<User>) {}
+// function CreateUser(data: Pick<User, 'id' | 'age'>) {}
+function CreateUser(data: Omit<User, 'id' | 'name'>) {}
 
 CreateUser({
-    id: 1,
-    name: 'doe',
+    // id: 1,
+    // name: 'doe',
     age: 20,
     createdAt: new Date(),
 });
