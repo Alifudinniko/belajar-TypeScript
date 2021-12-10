@@ -39,12 +39,33 @@ CreateUser({
 /*
 
 /*
-usecase : object of object
+Usecase #1 :  object with flexible property name, ttype
+usecase #2 : object of object
   {
     propA: {id,name,age},
     propB: {id,name,age}
   }
 */
+
+
+//Case 1
+type Response = Record<string, string | number>;
+const message:Response = {
+  id:'1',
+  name:"do",
+  age:1
+}
+
+//Case 2
+type Users = Record<string, User>;
+const allUsers:Users = {
+  "1" : {id:1,name:'fow',createdAt:new Date},
+  "2" : {id:1,name:'fow',createdAt:new Date}
+}
+
+
+
+
 
 /**
  * Extract => Extract<T, U>
