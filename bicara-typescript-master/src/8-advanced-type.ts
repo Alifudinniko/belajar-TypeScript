@@ -65,9 +65,20 @@ const allUsers:Users = {
 
 
 
-
-
 /**
  * Extract => Extract<T, U>
  * Exclude => Exclude<T, U>
  */
+
+interface Post{
+  id:string;
+  title:string;
+  createdAt: Date;
+}
+
+// type ExtType = Extract<"id"|"name" , "id"|"name">
+// type a = keyof User
+type ExtType = Extract<keyof User , keyof Post>
+type ExcType = Exclude<keyof User , keyof Post>
+
+type MyNewType = Record<string, ExtType>
